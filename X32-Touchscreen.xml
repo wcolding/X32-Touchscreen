@@ -1,0 +1,946 @@
+<lexml version="3">
+  <node ID="f504728e-d555-11ec-98c0-04922658cf47" type="GROUP">
+    <properties>
+      <property type="b">
+        <key>background</key>
+        <value>1</value>
+      </property>
+      <property type="c">
+        <key>color</key>
+        <value>
+          <r>0</r>
+          <g>0</g>
+          <b>0</b>
+          <a>1</a>
+        </value>
+      </property>
+      <property type="f">
+        <key>cornerRadius</key>
+        <value>1</value>
+      </property>
+      <property type="r">
+        <key>frame</key>
+        <value>
+          <x>0</x>
+          <y>0</y>
+          <w>1920</w>
+          <h>1080</h>
+        </value>
+      </property>
+      <property type="b">
+        <key>grabFocus</key>
+        <value>0</value>
+      </property>
+      <property type="b">
+        <key>interactive</key>
+        <value>0</value>
+      </property>
+      <property type="b">
+        <key>locked</key>
+        <value>0</value>
+      </property>
+      <property type="i">
+        <key>orientation</key>
+        <value>0</value>
+      </property>
+      <property type="b">
+        <key>outline</key>
+        <value>1</value>
+      </property>
+      <property type="i">
+        <key>outlineStyle</key>
+        <value>0</value>
+      </property>
+      <property type="i">
+        <key>pointerPriority</key>
+        <value>0</value>
+      </property>
+      <property type="i">
+        <key>shape</key>
+        <value>1</value>
+      </property>
+      <property type="b">
+        <key>visible</key>
+        <value>1</value>
+      </property>
+    </properties>
+    <values>
+      <value>
+        <key>touch</key>
+        <locked>0</locked>
+        <lockedDefaultCurrent>0</lockedDefaultCurrent>
+        <default>false</default>
+        <defaultPull>0</defaultPull>
+      </value>
+    </values>
+    <children>
+      <node ID="35cb4c0c-d556-11ec-8981-04922658cf47" type="GROUP">
+        <properties>
+          <property type="b">
+            <key>background</key>
+            <value>1</value>
+          </property>
+          <property type="c">
+            <key>color</key>
+            <value>
+              <r>0.25</r>
+              <g>0.25</g>
+              <b>0.25</b>
+              <a>1</a>
+            </value>
+          </property>
+          <property type="f">
+            <key>cornerRadius</key>
+            <value>1</value>
+          </property>
+          <property type="r">
+            <key>frame</key>
+            <value>
+              <x>0</x>
+              <y>0</y>
+              <w>1920</w>
+              <h>1080</h>
+            </value>
+          </property>
+          <property type="b">
+            <key>grabFocus</key>
+            <value>0</value>
+          </property>
+          <property type="b">
+            <key>interactive</key>
+            <value>0</value>
+          </property>
+          <property type="b">
+            <key>locked</key>
+            <value>0</value>
+          </property>
+          <property type="s">
+            <key>name</key>
+            <value>Admin</value>
+          </property>
+          <property type="i">
+            <key>orientation</key>
+            <value>0</value>
+          </property>
+          <property type="b">
+            <key>outline</key>
+            <value>1</value>
+          </property>
+          <property type="i">
+            <key>outlineStyle</key>
+            <value>0</value>
+          </property>
+          <property type="i">
+            <key>pointerPriority</key>
+            <value>0</value>
+          </property>
+          <property type="i">
+            <key>shape</key>
+            <value>1</value>
+          </property>
+          <property type="b">
+            <key>visible</key>
+            <value>0</value>
+          </property>
+        </properties>
+        <values>
+          <value>
+            <key>touch</key>
+            <locked>0</locked>
+            <lockedDefaultCurrent>0</lockedDefaultCurrent>
+            <default>false</default>
+            <defaultPull>0</defaultPull>
+          </value>
+        </values>
+        <children>
+          <node ID="53fab514-d556-11ec-a7e5-04922658cf47" type="LABEL">
+            <properties>
+              <property type="b">
+                <key>background</key>
+                <value>0</value>
+              </property>
+              <property type="c">
+                <key>color</key>
+                <value>
+                  <r>1</r>
+                  <g>0</g>
+                  <b>0</b>
+                  <a>1</a>
+                </value>
+              </property>
+              <property type="f">
+                <key>cornerRadius</key>
+                <value>1</value>
+              </property>
+              <property type="i">
+                <key>font</key>
+                <value>0</value>
+              </property>
+              <property type="r">
+                <key>frame</key>
+                <value>
+                  <x>0</x>
+                  <y>1</y>
+                  <w>1920</w>
+                  <h>119</h>
+                </value>
+              </property>
+              <property type="b">
+                <key>grabFocus</key>
+                <value>1</value>
+              </property>
+              <property type="b">
+                <key>interactive</key>
+                <value>0</value>
+              </property>
+              <property type="b">
+                <key>locked</key>
+                <value>0</value>
+              </property>
+              <property type="s">
+                <key>name</key>
+                <value>Page_Label</value>
+              </property>
+              <property type="i">
+                <key>orientation</key>
+                <value>0</value>
+              </property>
+              <property type="b">
+                <key>outline</key>
+                <value>0</value>
+              </property>
+              <property type="i">
+                <key>outlineStyle</key>
+                <value>1</value>
+              </property>
+              <property type="i">
+                <key>pointerPriority</key>
+                <value>0</value>
+              </property>
+              <property type="i">
+                <key>shape</key>
+                <value>1</value>
+              </property>
+              <property type="i">
+                <key>textAlignH</key>
+                <value>2</value>
+              </property>
+              <property type="i">
+                <key>textAlignV</key>
+                <value>2</value>
+              </property>
+              <property type="b">
+                <key>textClip</key>
+                <value>1</value>
+              </property>
+              <property type="c">
+                <key>textColor</key>
+                <value>
+                  <r>1</r>
+                  <g>1</g>
+                  <b>1</b>
+                  <a>1</a>
+                </value>
+              </property>
+              <property type="i">
+                <key>textLength</key>
+                <value>0</value>
+              </property>
+              <property type="i">
+                <key>textSize</key>
+                <value>64</value>
+              </property>
+              <property type="b">
+                <key>visible</key>
+                <value>1</value>
+              </property>
+            </properties>
+            <values>
+              <value>
+                <key>text</key>
+                <locked>0</locked>
+                <lockedDefaultCurrent>1</lockedDefaultCurrent>
+                <default>Administrative Settings</default>
+                <defaultPull>0</defaultPull>
+              </value>
+              <value>
+                <key>touch</key>
+                <locked>0</locked>
+                <lockedDefaultCurrent>0</lockedDefaultCurrent>
+                <default>false</default>
+                <defaultPull>0</defaultPull>
+              </value>
+            </values>
+          </node>
+        </children>
+      </node>
+      <node ID="19760d12-d556-11ec-b4dc-04922658cf47" type="GROUP">
+        <properties>
+          <property type="b">
+            <key>background</key>
+            <value>1</value>
+          </property>
+          <property type="c">
+            <key>color</key>
+            <value>
+              <r>0.25</r>
+              <g>0.25</g>
+              <b>0.25</b>
+              <a>1</a>
+            </value>
+          </property>
+          <property type="f">
+            <key>cornerRadius</key>
+            <value>1</value>
+          </property>
+          <property type="r">
+            <key>frame</key>
+            <value>
+              <x>0</x>
+              <y>0</y>
+              <w>1920</w>
+              <h>1080</h>
+            </value>
+          </property>
+          <property type="b">
+            <key>grabFocus</key>
+            <value>0</value>
+          </property>
+          <property type="b">
+            <key>interactive</key>
+            <value>0</value>
+          </property>
+          <property type="b">
+            <key>locked</key>
+            <value>0</value>
+          </property>
+          <property type="s">
+            <key>name</key>
+            <value>X32</value>
+          </property>
+          <property type="i">
+            <key>orientation</key>
+            <value>0</value>
+          </property>
+          <property type="b">
+            <key>outline</key>
+            <value>0</value>
+          </property>
+          <property type="i">
+            <key>outlineStyle</key>
+            <value>0</value>
+          </property>
+          <property type="i">
+            <key>pointerPriority</key>
+            <value>0</value>
+          </property>
+          <property type="s">
+            <key>script</key>
+            <value>${X32.lua}</value>
+          </property>
+          <property type="i">
+            <key>shape</key>
+            <value>1</value>
+          </property>
+          <property type="b">
+            <key>visible</key>
+            <value>1</value>
+          </property>
+        </properties>
+        <values>
+          <value>
+            <key>touch</key>
+            <locked>0</locked>
+            <lockedDefaultCurrent>0</lockedDefaultCurrent>
+            <default>false</default>
+            <defaultPull>0</defaultPull>
+          </value>
+        </values>
+        <children>
+          <node ID="c4faf418-d556-11ec-8f22-04922658cf47" type="GROUP">
+            <properties>
+              <property type="b">
+                <key>background</key>
+                <value>1</value>
+              </property>
+              <property type="c">
+                <key>color</key>
+                <value>
+                  <r>0.498039</r>
+                  <g>0</g>
+                  <b>0</b>
+                  <a>1</a>
+                </value>
+              </property>
+              <property type="f">
+                <key>cornerRadius</key>
+                <value>0</value>
+              </property>
+              <property type="r">
+                <key>frame</key>
+                <value>
+                  <x>0</x>
+                  <y>0</y>
+                  <w>640</w>
+                  <h>360</h>
+                </value>
+              </property>
+              <property type="b">
+                <key>grabFocus</key>
+                <value>0</value>
+              </property>
+              <property type="b">
+                <key>interactive</key>
+                <value>0</value>
+              </property>
+              <property type="b">
+                <key>locked</key>
+                <value>0</value>
+              </property>
+              <property type="s">
+                <key>name</key>
+                <value>Camera</value>
+              </property>
+              <property type="i">
+                <key>orientation</key>
+                <value>0</value>
+              </property>
+              <property type="b">
+                <key>outline</key>
+                <value>0</value>
+              </property>
+              <property type="i">
+                <key>outlineStyle</key>
+                <value>0</value>
+              </property>
+              <property type="i">
+                <key>pointerPriority</key>
+                <value>0</value>
+              </property>
+              <property type="i">
+                <key>shape</key>
+                <value>1</value>
+              </property>
+              <property type="s">
+                <key>tag</key>
+                <value>03</value>
+              </property>
+              <property type="b">
+                <key>visible</key>
+                <value>1</value>
+              </property>
+            </properties>
+            <values>
+              <value>
+                <key>touch</key>
+                <locked>0</locked>
+                <lockedDefaultCurrent>0</lockedDefaultCurrent>
+                <default>false</default>
+                <defaultPull>0</defaultPull>
+              </value>
+            </values>
+            <children>
+              <node ID="029fd90e-d558-11ec-adf4-04922658cf47" type="LABEL">
+                <properties>
+                  <property type="b">
+                    <key>background</key>
+                    <value>1</value>
+                  </property>
+                  <property type="c">
+                    <key>color</key>
+                    <value>
+                      <r>1</r>
+                      <g>0</g>
+                      <b>0</b>
+                      <a>1</a>
+                    </value>
+                  </property>
+                  <property type="f">
+                    <key>cornerRadius</key>
+                    <value>1</value>
+                  </property>
+                  <property type="i">
+                    <key>font</key>
+                    <value>0</value>
+                  </property>
+                  <property type="r">
+                    <key>frame</key>
+                    <value>
+                      <x>0</x>
+                      <y>0</y>
+                      <w>640</w>
+                      <h>25</h>
+                    </value>
+                  </property>
+                  <property type="b">
+                    <key>grabFocus</key>
+                    <value>1</value>
+                  </property>
+                  <property type="b">
+                    <key>interactive</key>
+                    <value>0</value>
+                  </property>
+                  <property type="b">
+                    <key>locked</key>
+                    <value>0</value>
+                  </property>
+                  <property type="s">
+                    <key>name</key>
+                    <value>CameraLabel</value>
+                  </property>
+                  <property type="i">
+                    <key>orientation</key>
+                    <value>0</value>
+                  </property>
+                  <property type="b">
+                    <key>outline</key>
+                    <value>0</value>
+                  </property>
+                  <property type="i">
+                    <key>outlineStyle</key>
+                    <value>1</value>
+                  </property>
+                  <property type="i">
+                    <key>pointerPriority</key>
+                    <value>0</value>
+                  </property>
+                  <property type="i">
+                    <key>shape</key>
+                    <value>1</value>
+                  </property>
+                  <property type="i">
+                    <key>textAlignH</key>
+                    <value>2</value>
+                  </property>
+                  <property type="i">
+                    <key>textAlignV</key>
+                    <value>2</value>
+                  </property>
+                  <property type="b">
+                    <key>textClip</key>
+                    <value>1</value>
+                  </property>
+                  <property type="c">
+                    <key>textColor</key>
+                    <value>
+                      <r>1</r>
+                      <g>1</g>
+                      <b>1</b>
+                      <a>1</a>
+                    </value>
+                  </property>
+                  <property type="i">
+                    <key>textLength</key>
+                    <value>0</value>
+                  </property>
+                  <property type="i">
+                    <key>textSize</key>
+                    <value>18</value>
+                  </property>
+                  <property type="b">
+                    <key>visible</key>
+                    <value>1</value>
+                  </property>
+                </properties>
+                <values>
+                  <value>
+                    <key>text</key>
+                    <locked>0</locked>
+                    <lockedDefaultCurrent>0</lockedDefaultCurrent>
+                    <default>CAM</default>
+                    <defaultPull>0</defaultPull>
+                  </value>
+                  <value>
+                    <key>touch</key>
+                    <locked>0</locked>
+                    <lockedDefaultCurrent>0</lockedDefaultCurrent>
+                    <default>false</default>
+                    <defaultPull>0</defaultPull>
+                  </value>
+                </values>
+              </node>
+              <node ID="8cfcaee2-d558-11ec-9d69-04922658cf47" type="GROUP">
+                <properties>
+                  <property type="b">
+                    <key>background</key>
+                    <value>0</value>
+                  </property>
+                  <property type="c">
+                    <key>color</key>
+                    <value>
+                      <r>0.25</r>
+                      <g>0.25</g>
+                      <b>0.25</b>
+                      <a>1</a>
+                    </value>
+                  </property>
+                  <property type="f">
+                    <key>cornerRadius</key>
+                    <value>1</value>
+                  </property>
+                  <property type="r">
+                    <key>frame</key>
+                    <value>
+                      <x>0</x>
+                      <y>25</y>
+                      <w>640</w>
+                      <h>335</h>
+                    </value>
+                  </property>
+                  <property type="b">
+                    <key>grabFocus</key>
+                    <value>0</value>
+                  </property>
+                  <property type="b">
+                    <key>interactive</key>
+                    <value>0</value>
+                  </property>
+                  <property type="b">
+                    <key>locked</key>
+                    <value>0</value>
+                  </property>
+                  <property type="s">
+                    <key>name</key>
+                    <value>CameraCanvas</value>
+                  </property>
+                  <property type="i">
+                    <key>orientation</key>
+                    <value>0</value>
+                  </property>
+                  <property type="b">
+                    <key>outline</key>
+                    <value>0</value>
+                  </property>
+                  <property type="i">
+                    <key>outlineStyle</key>
+                    <value>0</value>
+                  </property>
+                  <property type="i">
+                    <key>pointerPriority</key>
+                    <value>0</value>
+                  </property>
+                  <property type="i">
+                    <key>shape</key>
+                    <value>1</value>
+                  </property>
+                  <property type="b">
+                    <key>visible</key>
+                    <value>1</value>
+                  </property>
+                </properties>
+                <values>
+                  <value>
+                    <key>touch</key>
+                    <locked>0</locked>
+                    <lockedDefaultCurrent>0</lockedDefaultCurrent>
+                    <default>false</default>
+                    <defaultPull>0</defaultPull>
+                  </value>
+                </values>
+                <children>
+                  <node ID="cef3bf2a-d558-11ec-bc92-04922658cf47" type="GROUP">
+                    <properties>
+                      <property type="b">
+                        <key>background</key>
+                        <value>0</value>
+                      </property>
+                      <property type="c">
+                        <key>color</key>
+                        <value>
+                          <r>0.25</r>
+                          <g>0.25</g>
+                          <b>0.25</b>
+                          <a>1</a>
+                        </value>
+                      </property>
+                      <property type="f">
+                        <key>cornerRadius</key>
+                        <value>1</value>
+                      </property>
+                      <property type="r">
+                        <key>frame</key>
+                        <value>
+                          <x>8</x>
+                          <y>12</y>
+                          <w>48</w>
+                          <h>72</h>
+                        </value>
+                      </property>
+                      <property type="b">
+                        <key>grabFocus</key>
+                        <value>0</value>
+                      </property>
+                      <property type="b">
+                        <key>interactive</key>
+                        <value>0</value>
+                      </property>
+                      <property type="b">
+                        <key>locked</key>
+                        <value>0</value>
+                      </property>
+                      <property type="s">
+                        <key>name</key>
+                        <value>ChannelButton</value>
+                      </property>
+                      <property type="i">
+                        <key>orientation</key>
+                        <value>0</value>
+                      </property>
+                      <property type="b">
+                        <key>outline</key>
+                        <value>0</value>
+                      </property>
+                      <property type="i">
+                        <key>outlineStyle</key>
+                        <value>0</value>
+                      </property>
+                      <property type="i">
+                        <key>pointerPriority</key>
+                        <value>0</value>
+                      </property>
+                      <property type="i">
+                        <key>shape</key>
+                        <value>1</value>
+                      </property>
+                      <property type="s">
+                        <key>tag</key>
+                        <value>01</value>
+                      </property>
+                      <property type="b">
+                        <key>visible</key>
+                        <value>1</value>
+                      </property>
+                    </properties>
+                    <values>
+                      <value>
+                        <key>touch</key>
+                        <locked>0</locked>
+                        <lockedDefaultCurrent>0</lockedDefaultCurrent>
+                        <default>false</default>
+                        <defaultPull>0</defaultPull>
+                      </value>
+                    </values>
+                    <children>
+                      <node ID="e2a27e30-d558-11ec-b073-04922658cf47" type="BUTTON">
+                        <properties>
+                          <property type="b">
+                            <key>background</key>
+                            <value>1</value>
+                          </property>
+                          <property type="i">
+                            <key>buttonType</key>
+                            <value>2</value>
+                          </property>
+                          <property type="c">
+                            <key>color</key>
+                            <value>
+                              <r>1</r>
+                              <g>0</g>
+                              <b>0</b>
+                              <a>1</a>
+                            </value>
+                          </property>
+                          <property type="f">
+                            <key>cornerRadius</key>
+                            <value>0</value>
+                          </property>
+                          <property type="r">
+                            <key>frame</key>
+                            <value>
+                              <x>0</x>
+                              <y>0</y>
+                              <w>48</w>
+                              <h>72</h>
+                            </value>
+                          </property>
+                          <property type="b">
+                            <key>grabFocus</key>
+                            <value>1</value>
+                          </property>
+                          <property type="b">
+                            <key>interactive</key>
+                            <value>1</value>
+                          </property>
+                          <property type="b">
+                            <key>locked</key>
+                            <value>0</value>
+                          </property>
+                          <property type="s">
+                            <key>name</key>
+                            <value>Button</value>
+                          </property>
+                          <property type="i">
+                            <key>orientation</key>
+                            <value>0</value>
+                          </property>
+                          <property type="b">
+                            <key>outline</key>
+                            <value>0</value>
+                          </property>
+                          <property type="i">
+                            <key>outlineStyle</key>
+                            <value>0</value>
+                          </property>
+                          <property type="i">
+                            <key>pointerPriority</key>
+                            <value>0</value>
+                          </property>
+                          <property type="b">
+                            <key>press</key>
+                            <value>1</value>
+                          </property>
+                          <property type="b">
+                            <key>release</key>
+                            <value>1</value>
+                          </property>
+                          <property type="i">
+                            <key>shape</key>
+                            <value>1</value>
+                          </property>
+                          <property type="b">
+                            <key>valuePosition</key>
+                            <value>0</value>
+                          </property>
+                          <property type="b">
+                            <key>visible</key>
+                            <value>1</value>
+                          </property>
+                        </properties>
+                        <values>
+                          <value>
+                            <key>touch</key>
+                            <locked>0</locked>
+                            <lockedDefaultCurrent>0</lockedDefaultCurrent>
+                            <default>false</default>
+                            <defaultPull>0</defaultPull>
+                          </value>
+                          <value>
+                            <key>x</key>
+                            <locked>0</locked>
+                            <lockedDefaultCurrent>0</lockedDefaultCurrent>
+                            <default>0</default>
+                            <defaultPull>0</defaultPull>
+                          </value>
+                        </values>
+                      </node>
+                      <node ID="007bd67c-d559-11ec-8c94-04922658cf47" type="TEXT">
+                        <properties>
+                          <property type="b">
+                            <key>background</key>
+                            <value>0</value>
+                          </property>
+                          <property type="c">
+                            <key>color</key>
+                            <value>
+                              <r>1</r>
+                              <g>0</g>
+                              <b>0</b>
+                              <a>1</a>
+                            </value>
+                          </property>
+                          <property type="f">
+                            <key>cornerRadius</key>
+                            <value>0</value>
+                          </property>
+                          <property type="i">
+                            <key>font</key>
+                            <value>0</value>
+                          </property>
+                          <property type="r">
+                            <key>frame</key>
+                            <value>
+                              <x>0</x>
+                              <y>0</y>
+                              <w>48</w>
+                              <h>72</h>
+                            </value>
+                          </property>
+                          <property type="b">
+                            <key>grabFocus</key>
+                            <value>1</value>
+                          </property>
+                          <property type="b">
+                            <key>interactive</key>
+                            <value>0</value>
+                          </property>
+                          <property type="b">
+                            <key>locked</key>
+                            <value>0</value>
+                          </property>
+                          <property type="s">
+                            <key>name</key>
+                            <value>ButtonText</value>
+                          </property>
+                          <property type="i">
+                            <key>orientation</key>
+                            <value>0</value>
+                          </property>
+                          <property type="b">
+                            <key>outline</key>
+                            <value>0</value>
+                          </property>
+                          <property type="i">
+                            <key>outlineStyle</key>
+                            <value>1</value>
+                          </property>
+                          <property type="i">
+                            <key>pointerPriority</key>
+                            <value>0</value>
+                          </property>
+                          <property type="i">
+                            <key>shape</key>
+                            <value>1</value>
+                          </property>
+                          <property type="i">
+                            <key>textAlignH</key>
+                            <value>2</value>
+                          </property>
+                          <property type="c">
+                            <key>textColor</key>
+                            <value>
+                              <r>1</r>
+                              <g>1</g>
+                              <b>1</b>
+                              <a>1</a>
+                            </value>
+                          </property>
+                          <property type="i">
+                            <key>textSize</key>
+                            <value>14</value>
+                          </property>
+                          <property type="b">
+                            <key>visible</key>
+                            <value>1</value>
+                          </property>
+                        </properties>
+                        <values>
+                          <value>
+                            <key>text</key>
+                            <locked>0</locked>
+                            <lockedDefaultCurrent>1</lockedDefaultCurrent>
+                            <default>
+Ch
+01
+</default>
+                            <defaultPull>0</defaultPull>
+                          </value>
+                          <value>
+                            <key>touch</key>
+                            <locked>0</locked>
+                            <lockedDefaultCurrent>0</lockedDefaultCurrent>
+                            <default>false</default>
+                            <defaultPull>0</defaultPull>
+                          </value>
+                        </values>
+                      </node>
+                    </children>
+                  </node>
+                </children>
+              </node>
+            </children>
+          </node>
+        </children>
+      </node>
+    </children>
+  </node>
+</lexml>
