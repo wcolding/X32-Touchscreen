@@ -39,6 +39,10 @@
         <key>locked</key>
         <value>0</value>
       </property>
+      <property type="s">
+        <key>name</key>
+        <value>group</value>
+      </property>
       <property type="i">
         <key>orientation</key>
         <value>0</value>
@@ -680,7 +684,7 @@
                       </property>
                       <property type="s">
                         <key>name</key>
-                        <value>ChannelButton</value>
+                        <value>Channel</value>
                       </property>
                       <property type="i">
                         <key>orientation</key>
@@ -822,6 +826,67 @@
                             <defaultPull>0</defaultPull>
                           </value>
                         </values>
+                        <messages>
+                          <osc>
+                            <enabled>1</enabled>
+                            <send>1</send>
+                            <receive>1</receive>
+                            <feedback>0</feedback>
+                            <connections>00001</connections>
+                            <triggers>
+                              <trigger>
+                                <var>x</var>
+                                <condition>ANY</condition>
+                              </trigger>
+                            </triggers>
+                            <path>
+                              <partial>
+                                <type>CONSTANT</type>
+                                <conversion>STRING</conversion>
+                                <value>/ch/</value>
+                                <scaleMin>0</scaleMin>
+                                <scaleMax>1</scaleMax>
+                              </partial>
+                              <partial>
+                                <type>PROPERTY</type>
+                                <conversion>STRING</conversion>
+                                <value>parent.tag</value>
+                                <scaleMin>0</scaleMin>
+                                <scaleMax>1</scaleMax>
+                              </partial>
+                              <partial>
+                                <type>CONSTANT</type>
+                                <conversion>STRING</conversion>
+                                <value>/mix/</value>
+                                <scaleMin>0</scaleMin>
+                                <scaleMax>1</scaleMax>
+                              </partial>
+                              <partial>
+                                <type>PROPERTY</type>
+                                <conversion>STRING</conversion>
+                                <value>parent.parent.parent.tag</value>
+                                <scaleMin>0</scaleMin>
+                                <scaleMax>1</scaleMax>
+                              </partial>
+                              <partial>
+                                <type>CONSTANT</type>
+                                <conversion>STRING</conversion>
+                                <value>/on</value>
+                                <scaleMin>0</scaleMin>
+                                <scaleMax>1</scaleMax>
+                              </partial>
+                            </path>
+                            <arguments>
+                              <partial>
+                                <type>VALUE</type>
+                                <conversion>INTEGER</conversion>
+                                <value>x</value>
+                                <scaleMin>0</scaleMin>
+                                <scaleMax>1</scaleMax>
+                              </partial>
+                            </arguments>
+                          </osc>
+                        </messages>
                       </node>
                       <node ID="007bd67c-d559-11ec-8c94-04922658cf47" type="TEXT">
                         <properties>
@@ -869,7 +934,7 @@
                           </property>
                           <property type="s">
                             <key>name</key>
-                            <value>ButtonText</value>
+                            <value>Text</value>
                           </property>
                           <property type="i">
                             <key>orientation</key>
@@ -918,9 +983,7 @@
                             <key>text</key>
                             <locked>0</locked>
                             <lockedDefaultCurrent>1</lockedDefaultCurrent>
-                            <default>
-Ch
-01
+                            <default>Ch 01
 </default>
                             <defaultPull>0</defaultPull>
                           </value>

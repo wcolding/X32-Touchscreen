@@ -10,6 +10,5 @@ function init()
     self.children[i].color = cameraData[i].background
     self.children[i].children['CameraLabel'].color = cameraData[i].color
     self.children[i].children['CameraLabel'].values.text = cameraData[i].name
-    print('done')
   end
 end
