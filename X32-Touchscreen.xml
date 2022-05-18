@@ -370,9 +370,9 @@
               <property type="c">
                 <key>color</key>
                 <value>
-                  <r>0.878431</r>
-                  <g>0.4</g>
-                  <b>0.4</b>
+                  <r>0</r>
+                  <g>0</g>
+                  <b>0</b>
                   <a>1</a>
                 </value>
               </property>
@@ -545,7 +545,7 @@
                   <property type="r">
                     <key>frame</key>
                     <value>
-                      <x>-0</x>
+                      <x>0</x>
                       <y>0</y>
                       <w>640</w>
                       <h>25</h>
@@ -1180,9 +1180,9 @@
                   <property type="r">
                     <key>frame</key>
                     <value>
-                      <x>-1</x>
+                      <x>0</x>
                       <y>24</y>
-                      <w>640</w>
+                      <w>642</w>
                       <h>336</h>
                     </value>
                   </property>
@@ -1337,7 +1337,7 @@
                           </property>
                           <property type="f">
                             <key>cornerRadius</key>
-                            <value>6</value>
+                            <value>1</value>
                           </property>
                           <property type="r">
                             <key>frame</key>
@@ -1494,7 +1494,7 @@
                           </property>
                           <property type="i">
                             <key>textSize</key>
-                            <value>14</value>
+                            <value>18</value>
                           </property>
                           <property type="b">
                             <key>visible</key>
@@ -1616,7 +1616,7 @@
                           </property>
                           <property type="f">
                             <key>cornerRadius</key>
-                            <value>6</value>
+                            <value>1</value>
                           </property>
                           <property type="r">
                             <key>frame</key>
@@ -1773,7 +1773,7 @@
                           </property>
                           <property type="i">
                             <key>textSize</key>
-                            <value>14</value>
+                            <value>18</value>
                           </property>
                           <property type="b">
                             <key>visible</key>
@@ -1895,7 +1895,7 @@
                           </property>
                           <property type="f">
                             <key>cornerRadius</key>
-                            <value>6</value>
+                            <value>1</value>
                           </property>
                           <property type="r">
                             <key>frame</key>
@@ -2052,7 +2052,7 @@
                           </property>
                           <property type="i">
                             <key>textSize</key>
-                            <value>14</value>
+                            <value>18</value>
                           </property>
                           <property type="b">
                             <key>visible</key>
@@ -2174,7 +2174,7 @@
                           </property>
                           <property type="f">
                             <key>cornerRadius</key>
-                            <value>6</value>
+                            <value>1</value>
                           </property>
                           <property type="r">
                             <key>frame</key>
@@ -2331,7 +2331,7 @@
                           </property>
                           <property type="i">
                             <key>textSize</key>
-                            <value>14</value>
+                            <value>18</value>
                           </property>
                           <property type="b">
                             <key>visible</key>
@@ -2453,7 +2453,7 @@
                           </property>
                           <property type="f">
                             <key>cornerRadius</key>
-                            <value>6</value>
+                            <value>1</value>
                           </property>
                           <property type="r">
                             <key>frame</key>
@@ -2610,7 +2610,7 @@
                           </property>
                           <property type="i">
                             <key>textSize</key>
-                            <value>14</value>
+                            <value>18</value>
                           </property>
                           <property type="b">
                             <key>visible</key>
@@ -2732,7 +2732,7 @@
                           </property>
                           <property type="f">
                             <key>cornerRadius</key>
-                            <value>6</value>
+                            <value>1</value>
                           </property>
                           <property type="r">
                             <key>frame</key>
@@ -2889,7 +2889,7 @@
                           </property>
                           <property type="i">
                             <key>textSize</key>
-                            <value>14</value>
+                            <value>18</value>
                           </property>
                           <property type="b">
                             <key>visible</key>
@@ -3011,7 +3011,7 @@
                           </property>
                           <property type="f">
                             <key>cornerRadius</key>
-                            <value>6</value>
+                            <value>1</value>
                           </property>
                           <property type="r">
                             <key>frame</key>
@@ -3168,7 +3168,7 @@
                           </property>
                           <property type="i">
                             <key>textSize</key>
-                            <value>14</value>
+                            <value>18</value>
                           </property>
                           <property type="b">
                             <key>visible</key>
@@ -3290,7 +3290,7 @@
                           </property>
                           <property type="f">
                             <key>cornerRadius</key>
-                            <value>6</value>
+                            <value>1</value>
                           </property>
                           <property type="r">
                             <key>frame</key>
@@ -3447,7 +3447,7 @@
                           </property>
                           <property type="i">
                             <key>textSize</key>
-                            <value>14</value>
+                            <value>18</value>
                           </property>
                           <property type="b">
                             <key>visible</key>
@@ -3569,7 +3569,7 @@
                           </property>
                           <property type="f">
                             <key>cornerRadius</key>
-                            <value>6</value>
+                            <value>1</value>
                           </property>
                           <property type="r">
                             <key>frame</key>
@@ -3726,7 +3726,7 @@
                           </property>
                           <property type="i">
                             <key>textSize</key>
-                            <value>14</value>
+                            <value>18</value>
                           </property>
                           <property type="b">
                             <key>visible</key>
@@ -3769,7 +3769,7 @@
                       </property>
                       <property type="f">
                         <key>cornerRadius</key>
-                        <value>6</value>
+                        <value>3</value>
                       </property>
                       <property type="r">
                         <key>frame</key>
@@ -3868,7 +3868,7 @@
                       <r>1</r>
                       <g>1</g>
                       <b>1</b>
-                      <a>1</a>
+                      <a>0</a>
                     </value>
                   </property>
                   <property type="f">
@@ -3886,7 +3886,7 @@
                   </property>
                   <property type="b">
                     <key>grabFocus</key>
-                    <value>1</value>
+                    <value>0</value>
                   </property>
                   <property type="b">
                     <key>interactive</key>
