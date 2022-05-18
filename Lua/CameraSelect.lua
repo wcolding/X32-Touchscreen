@@ -36,5 +36,13 @@ function onReceiveNotify(sender, data)
     self.parent.children['CameraColor'].color = cameraData[data].color
     self.parent.children['CameraBackground'].color = cameraData[data].background
     self.parent.tag = string.format('%.2d', cameraData[data].bus)
+    
+    -- Request buttons status over OSC
+    -- 
+    -- Mute
+    local oscMsg = string.format('/bus/%s/mix/on', self.parent.tag)
+    sendOSC(oscMsg)
+    
+    -- todo: add channel buttons
   end
 end
