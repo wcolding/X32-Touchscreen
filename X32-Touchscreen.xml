@@ -809,9 +809,9 @@
                       <property type="c">
                         <key>color</key>
                         <value>
-                          <r>0.25</r>
-                          <g>0.25</g>
-                          <b>0.25</b>
+                          <r>0</r>
+                          <g>1</g>
+                          <b>0</b>
                           <a>1</a>
                         </value>
                       </property>
@@ -911,7 +911,7 @@
                               <r>1</r>
                               <g>0</g>
                               <b>0</b>
-                              <a>1</a>
+                              <a>0</a>
                             </value>
                           </property>
                           <property type="f">
@@ -937,7 +937,7 @@
                           </property>
                           <property type="b">
                             <key>grabFocus</key>
-                            <value>1</value>
+                            <value>0</value>
                           </property>
                           <property type="b">
                             <key>grid</key>
@@ -993,7 +993,7 @@
                           </property>
                           <property type="b">
                             <key>visible</key>
-                            <value>0</value>
+                            <value>1</value>
                           </property>
                         </properties>
                         <values>
@@ -1312,8 +1312,7 @@
                             <key>text</key>
                             <locked>0</locked>
                             <lockedDefaultCurrent>1</lockedDefaultCurrent>
-                            <default>Ch 01
-</default>
+                            <default>Red</default>
                             <defaultPull>0</defaultPull>
                           </value>
                           <value>

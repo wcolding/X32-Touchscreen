@@ -63,12 +63,49 @@ table.insert(cameraData, FCam)
 --table.insert(cameraData, HCam)
 table.insert(cameraData, PGM)
 
+
+Ch01 = {}
+Ch01.name           = 'Red'
+Ch01.color          = Colors.red
+Ch01.channel        = 1
+Ch01.midiChannel    = 1
+Ch01.midiController = 21
+
+Ch02 = {}
+Ch02.name           = 'Blue'
+Ch02.color          = Colors.blue
+Ch02.channel        = 2
+Ch02.midiChannel    = 1
+Ch02.midiController = 41
+
+
+local channelData = {}
+table.insert(channelData, Ch01)
+table.insert(channelData, Ch02)
+
+
 function init()
+  local cameraMix
+  local cameraCanvas
+  local channel
   for i = 1, #self.children do
+    cameraMix = self.children[i]
     --self.children[i].children['CameraBackground'].color = cameraData[i].background
     --self.children[i].children['CameraColor'].color = cameraData[i].color
     --self.children[i].children['CameraLabel'].values.text = cameraData[i].name
     
-    self.notify(self.children[i].children['CameraSelect'], self.name, cameraData)
+    self.notify(cameraMix.children['CameraSelect'], self.name, cameraData)
+    
+    cameraCanvas = cameraMix.children['CameraCanvas']
+    for ch = 1, #cameraCanvas.children - 1 do
+      channel = cameraCanvas.children[ch]
+      channel.children['Button'].color = channelData[ch].color
+      channel.children['Text'].values.text = channelData[ch].name
+      channel.tag = string.format('%.2d', channelData[ch].channel)
+      channel.midiChannel = channelData[ch].midiChannel
+      channel.midiController = channelData[ch].midiController
+      
+      -- todo: cache and copy positional data of each button
+    end
   end
 end
