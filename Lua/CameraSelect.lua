@@ -25,7 +25,12 @@ function onReceiveNotify(sender, data)
     cameraData = data
     setSteps()
     
-    self.parent.tag = string.format('%.2d', cameraData[self.children['CameraSelectRadio'].values.x + 1].bus)
+    local mixIndex = self.children['CameraSelectRadio'].values.x + 1
+    if mixIndex > #cameraData then
+      mixIndex = 1
+    end
+    
+    self.parent.tag = string.format('%.2d', cameraData[mixIndex].bus)
     
     for i = 1, #cameraData do
       self.children[i].children['Color'].color = cameraData[i].color
