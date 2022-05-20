@@ -25,6 +25,8 @@ function onReceiveNotify(sender, data)
     cameraData = data
     setSteps()
     
+    self.parent.tag = string.format('%.2d', cameraData[self.children['CameraSelectRadio'].values.x + 1].bus)
+    
     for i = 1, #cameraData do
       self.children[i].children['Color'].color = cameraData[i].color
       self.children[i].children['Label'].values.text = cameraData[i].name
