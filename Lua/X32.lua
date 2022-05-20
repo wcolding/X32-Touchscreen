@@ -4,7 +4,7 @@
 
 function init()
   local cameraMix
-  local cameraCanvas
+  local cameraChannels
   local channel
   for i = 1, #self.children do
     cameraMix = self.children[i]
@@ -14,9 +14,9 @@ function init()
     
     self.notify(cameraMix.children['CameraSelect'], self.name, cameraData)
     
-    cameraCanvas = cameraMix.children['CameraCanvas']
-    for ch = 1, #cameraCanvas.children - 1 do
-      channel = cameraCanvas.children[ch]
+    cameraChannels = cameraMix.children['Channels']
+    for ch = 1, #cameraChannels.children do
+      channel = cameraChannels.children[ch]
       channel.children['Button'].color = channelData[ch].color
       channel.children['Text'].values.text = channelData[ch].name
       channel.tag = string.format('%.2d', channelData[ch].channel)
