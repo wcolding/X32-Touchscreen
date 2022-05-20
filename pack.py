@@ -14,6 +14,11 @@ replacements = 0
 startIndex = 0
 endIndex = 0
 luaName = ''
+luaScript = ''
+submoduleStart = 0
+submoduleNext = 0
+submoduleName = ''
+submoduleScript = ''
 start = ''
 end = ''
 
@@ -33,6 +38,30 @@ while startIndex != -1:
             print('Could not complete packing! Closing...')
             exit()
 
+        # Check luaScript for submodules
+        while submoduleStart != -1:
+            submoduleStart = luaScript.find('--Submodule.include(\'')
+            if submoduleStart > -1:
+                start = luaScript[0 : submoduleStart]
+                end = luaScript[submoduleStart + 21 :]
+                submoduleNext = end.find('\')')
+                submoduleName = end[0:submoduleNext]
+                if submoduleNext > -1:
+                    print(f'Found submodule reference: \'{submoduleName}\'')
+                    
+                    try:
+                        luaFile = io.open(f'Lua/Submodules/{submoduleName}', 'r')
+                        submoduleScript = luaFile.read()
+                        luaFile.close()
+                    except:
+                        print(f'Unable to open submodule file \'{submoduleName}\'')
+                        print('Could not complete packing! Closing...')
+                        exit()
+                    
+                    luaScript = luaScript.replace(f'--Submodule.include(\'{submoduleName}\')', submoduleScript)
+                    replacements += 1
+
+        # Insert luaScript into XML 
         start = data[0 : startIndex]
         end = data[endIndex + 1 :]
         data = f'{start}<![CDATA[{luaScript}]]>{end}'

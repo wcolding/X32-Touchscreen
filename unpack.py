@@ -115,9 +115,37 @@ prettyXML = ET.XML(stringXML)
 ET.indent(prettyXML)
 
 scriptObjs = GetRecursiveObjects(prettyXML)
+submoduleStart = 0
+submoduleNext = 0
+submoduleName = ''
+submoduleScript = ''
+submoduleFileName = ''
 
 for obj in scriptObjs:
     filename = f'Lua/{obj.name.text}{obj.name.modifier}.lua'
+    print(f'Unpacking \'{obj.name.text}{obj.name.modifier}.lua\'...')
+    # Look for submodules
+    submoduleStart = 0
+    while submoduleStart != -1:
+        submoduleStart = obj.script.find('--Submodule.start(\'')
+        if submoduleStart > -1:
+            start = obj.script[0 : submoduleStart]
+            end = obj.script[submoduleStart + 19 :]
+            submoduleNext = end.find('\')')
+            submoduleName = end[0:submoduleNext]
+            submoduleFileName = f'Lua/Submodules/{submoduleName}'
+            print(f'Unpacking submodule \'{submoduleName}\'...')
+            
+            end = obj.script[submoduleNext + 2 :]
+            submoduleNext = obj.script.find('--Submodule.end()')
+            submoduleScript = obj.script[submoduleStart : submoduleNext + 17]
+
+            file = io.open(submoduleFileName, 'w')
+            file.write(submoduleScript)
+            file.close()
+
+            obj.script = obj.script.replace(submoduleScript, f'--Submodule.include(\'{submoduleName}\')')
+
     file = io.open(filename, 'w')
     file.write(obj.script)
     file.close()
