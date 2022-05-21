@@ -1225,7 +1225,7 @@
                           </osc>
                         </messages>
                       </node>
-                      <node ID="007bd67c-d559-11ec-8c94-04922658cf47" type="TEXT">
+                      <node ID="5449583e-d904-11ec-a99a-04922658cf47" type="LABEL">
                         <properties>
                           <property type="b">
                             <key>background</key>
@@ -1242,7 +1242,7 @@
                           </property>
                           <property type="f">
                             <key>cornerRadius</key>
-                            <value>0</value>
+                            <value>1</value>
                           </property>
                           <property type="i">
                             <key>font</key>
@@ -1297,6 +1297,14 @@
                             <key>textAlignH</key>
                             <value>2</value>
                           </property>
+                          <property type="i">
+                            <key>textAlignV</key>
+                            <value>2</value>
+                          </property>
+                          <property type="b">
+                            <key>textClip</key>
+                            <value>1</value>
+                          </property>
                           <property type="c">
                             <key>textColor</key>
                             <value>
@@ -1305,6 +1313,10 @@
                               <b>1</b>
                               <a>1</a>
                             </value>
+                          </property>
+                          <property type="i">
+                            <key>textLength</key>
+                            <value>0</value>
                           </property>
                           <property type="i">
                             <key>textSize</key>
