@@ -25,12 +25,13 @@ function onReceiveNotify(sender, data)
     cameraData = data
     setSteps()
     
-    local mixIndex = self.children['CameraSelectRadio'].values.x + 1
-    if mixIndex > #cameraData then
-      mixIndex = 1
+    self.parent.mixIndex = self.children['CameraSelectRadio'].values.x + 1
+    if self.parent.mixIndex > #cameraData then
+      self.parent.mixIndex = 1
     end
     
-    self.parent.tag = string.format('%.2d', cameraData[mixIndex].bus)
+    self.parent.mixbus = cameraData[self.parent.mixIndex].bus
+    self.parent.tag = string.format('%.2d', self.parent.mixbus)
     
     for i = 1, #cameraData do
       self.children[i].children['Color'].color = cameraData[i].color
@@ -42,7 +43,9 @@ function onReceiveNotify(sender, data)
     self.parent.children['CameraLabel'].values.text = cameraData[data].name
     self.parent.children['CameraColor'].color = cameraData[data].color
     self.parent.children['CameraBackground'].color = cameraData[data].background
-    self.parent.tag = string.format('%.2d', cameraData[data].bus)
+    self.parent.mixIndex = data
+    self.parent.mixbus = cameraData[data].bus
+    self.parent.tag = string.format('%.2d', self.parent.mixbus)
     
     -- Request buttons status over OSC
     -- 
