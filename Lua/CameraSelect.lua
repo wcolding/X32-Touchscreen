@@ -53,6 +53,10 @@ function onReceiveNotify(sender, data)
     local oscMsg = string.format('/bus/%s/mix/on', self.parent.tag)
     sendOSC(oscMsg)
     
+    -- Tone status
+    oscMsg = string.format('/outputs/main/%s/src', self.parent.tag)
+    sendOSC(oscMsg)
+    
     -- todo: add channel buttons
   end
 end
