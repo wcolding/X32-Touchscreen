@@ -57,6 +57,13 @@ function onReceiveNotify(sender, data)
     oscMsg = string.format('/outputs/main/%s/src', self.parent.tag)
     sendOSC(oscMsg)
     
-    -- todo: add channel buttons
+    -- Channel buttons
+    local channels = self.parent.children['Channels'].children
+    
+    for i = 1, #channels do
+      oscMsg = string.format('/ch/%s/mix/%s/on', channels[i].tag, self.parent.tag)
+      sendOSC(oscMsg)
+    end
+    
   end
 end

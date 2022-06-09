@@ -28,7 +28,6 @@ function init()
         channel.midiChannel = channelData[ch].midiChannel
         channel.midiController = channelData[ch].midiController
       
-        
         if i == 1 then 
           -- Cache this channel's display data
           table.insert(frameCache, channel.frame)
