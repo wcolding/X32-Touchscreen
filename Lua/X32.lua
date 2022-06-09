@@ -6,6 +6,10 @@ function init()
   local cameraMix
   local cameraChannels
   local channel
+  
+  local frameCache = {}
+  local visibleCache = {}
+  
   for i = 1, #self.children do
     child = self.children[i]
     --self.children[i].children['CameraBackground'].color = cameraData[i].background
@@ -24,7 +28,16 @@ function init()
         channel.midiChannel = channelData[ch].midiChannel
         channel.midiController = channelData[ch].midiController
       
-        -- todo: cache and copy positional data of each button
+        
+        if i == 1 then 
+          -- Cache this channel's display data
+          table.insert(frameCache, channel.frame)
+          table.insert(visibleCache, channel.visible)
+        else
+          -- Load the display data from the cache
+          channel.frame = frameCache[ch]
+          channel.visible = visibleCache[ch]
+        end
       end
     else
       if child.name == 'MonitorSelect' then
