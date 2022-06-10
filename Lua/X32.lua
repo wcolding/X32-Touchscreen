@@ -56,6 +56,13 @@ function writeChannelDataToX32()
   for i = 1, #channelData do
     oscString = string.format('/ch/%.2d/config/name', channelData[i].channel)
     sendOSC({oscString, {{ tag = 's', value = channelData[i].name }}})
+
+    oscString = string.format('/ch/%.2d/config/color', channelData[i].channel)
+    for col = 0, 7 do
+      if channelData[i].color == buttonColors[col] then
+        sendOSC({oscString, {{ tag = 'i', value = col }}})
+      end
+    end
   end
 end
 
