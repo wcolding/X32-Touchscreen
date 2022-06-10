@@ -50,9 +50,24 @@ function reset()
   print('Done!')
 end
 
+function writeChannelDataToX32()
+  local oscString
+
+  for i = 1, #channelData do
+    oscString = string.format('/ch/%.2d/config/name', i)
+    sendOSC({oscString, {{ tag = 's', value = channelData[i].name }}})
+  end
+end
+
 function onReceiveNotify(sender, data)
   if data == 'reset' then
     print('Screen reset!')
     reset()
+  end
+  
+  if data == 'write' then
+    print('Writing channel data to X32...')
+    writeChannelDataToX32()
+    print('Done!')
   end
 end
