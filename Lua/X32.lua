@@ -54,7 +54,7 @@ function writeChannelDataToX32()
   local oscString
 
   for i = 1, #channelData do
-    oscString = string.format('/ch/%.2d/config/name', i)
+    oscString = string.format('/ch/%.2d/config/name', channelData[i].channel)
     sendOSC({oscString, {{ tag = 's', value = channelData[i].name }}})
   end
 end
