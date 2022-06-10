@@ -2,7 +2,18 @@
 
 --Submodule.include('Channels.lua')
 
+initialized = false
+
 function init()
+  if initialized == false then
+    print('Initializing...')
+    reset()
+    initialized = true
+    print('Done!')
+  end
+end
+
+function reset()
   local cameraMix
   local cameraChannels
   local channel
@@ -12,9 +23,6 @@ function init()
   
   for i = 1, #self.children do
     child = self.children[i]
-    --self.children[i].children['CameraBackground'].color = cameraData[i].background
-    --self.children[i].children['CameraColor'].color = cameraData[i].color
-    --self.children[i].children['CameraLabel'].values.text = cameraData[i].name
     
     if child.tag ~= 'ignore' then
       self.notify(child.children['CameraSelect'], self.name, cameraData)
