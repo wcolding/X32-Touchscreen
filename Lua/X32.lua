@@ -2,18 +2,12 @@
 
 --Submodule.include('Channels.lua')
 
-initialized = false
-
 function init()
-  if initialized == false then
-    print('Initializing...')
-    reset()
-    initialized = true
-    print('Done!')
-  end
+  reset()
 end
 
 function reset()
+  print('Initializing...')
   local cameraMix
   local cameraChannels
   local channel
@@ -52,8 +46,13 @@ function reset()
       end
     end
   end
+  
+  print('Done!')
 end
 
 function onReceiveNotify(sender, data)
-  --if sender == 
+  if data == 'reset' then
+    print('Screen reset!')
+    reset()
+  end
 end
