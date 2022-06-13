@@ -24,7 +24,7 @@ function reset()
       cameraChannels = child.children['Channels']
       for ch = 1, #cameraChannels.children do
         channel = cameraChannels.children[ch]
-        channel.children['Button'].color = channelData[ch].color
+        channel.children['ChannelButton'].color = channelData[ch].color
         channel.children['Text'].values.text = channelData[ch].name
         channel.tag = string.format('%.2d', channelData[ch].channel)
         channel.midiChannel = channelData[ch].midiChannel
