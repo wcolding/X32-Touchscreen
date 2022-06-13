@@ -52,6 +52,9 @@ function updateCamera(data)
   self.parent.mixIndex = data
   self.parent.mixbus = cameraData[data].bus
   self.parent.tag = string.format('%.2d', self.parent.mixbus)
+
+  -- Set mix group to None to avoid unwanted changes
+  self.parent.children['MixGroupSelect'].children['MixGroupSelectRadio'].values.x = 0
   
   -- Request buttons status over OSC
   -- 
