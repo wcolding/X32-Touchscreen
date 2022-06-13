@@ -19,6 +19,7 @@ function reset()
     child = self.children[i]
     
     if child.tag ~= 'ignore' then
+      child.children['CameraSelect'].children['CameraSelectRadio'].values.x = i - 1
       self.notify(child.children['CameraSelect'], self.name, cameraData)
     
       cameraChannels = child.children['Channels']
