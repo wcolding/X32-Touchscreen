@@ -14,12 +14,13 @@ function reset()
   
   local frameCache = {}
   local visibleCache = {}
+  local camCounter = 0
   
   for i = 1, #self.children do
     child = self.children[i]
     
     if child.tag ~= 'ignore' then
-      child.children['CameraSelect'].children['CameraSelectRadio'].values.x = i - 1
+      child.children['CameraSelect'].children['CameraSelectRadio'].values.x = camCounter
       self.notify(child.children['CameraSelect'], self.name, cameraData)
     
       cameraChannels = child.children['Channels']
@@ -41,6 +42,8 @@ function reset()
           channel.visible = visibleCache[ch]
         end
       end
+      
+      camCounter = camCounter + 1
     else
       if child.name == 'MonitorSelect' then
         self.notify(child, self.name, cameraData)
