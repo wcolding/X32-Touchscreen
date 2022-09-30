@@ -11,6 +11,13 @@ end
 function onValueChanged(key)
   if key == 'x' then
     if camera.mixGroup ~= 0 then
+      -- Send MixGroup, Channel Index and Toggle State to X32
+      local data = {}
+      data[1] = self.parent.parent.parent.mixGroup
+      data[2] = self.parent.index
+      data[3] = self.values.x
+      self.notify(camera.parent.parent, self.name, data)
+      
       for i = 1, #x32Children do
         local child = x32Children[i]
         if child.tag ~= 'ignore' and child ~= camera then

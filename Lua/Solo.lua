@@ -1,7 +1,7 @@
 local monitorSelect
 
 function init()
-  monitorSelect = self.parent.parent:findByName('MonitorSelect', true)
+  monitorSelect = root:findByName('MonitorSelect', true)
 end
 
 function onValueChanged(key)

@@ -53,6 +53,12 @@ PGM.color       = Color.fromHexString('000000FF')
 PGM.background  = Color.fromHexString('666666ff')
 PGM.bus         = 9
 
+Mon = {}
+Mon.name        = 'Monitor Mix'
+Mon.color       = Color.fromHexString('000000FF')
+Mon.background  = Color.fromHexString('666666ff')
+Mon.bus         = 10
+
 local cameraData = {}
 table.insert(cameraData, ACam)
 table.insert(cameraData, BCam)
@@ -60,7 +66,8 @@ table.insert(cameraData, CCam)
 table.insert(cameraData, DCam)
 table.insert(cameraData, ECam)
 table.insert(cameraData, FCam)
---table.insert(cameraData, GCam)
+table.insert(cameraData, GCam)
 --table.insert(cameraData, HCam)
 table.insert(cameraData, PGM)
+table.insert(cameraData, Mon)
 --Submodule.end()

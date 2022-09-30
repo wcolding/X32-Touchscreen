@@ -22,38 +22,31 @@ buttonColors.White   = buttonColors[7]
 
 local channelData = {}
 
-function AddChannel(name, color, channel, midiChannel, midiController)
+function AddChannel(name, color, channel, textSize, midiChannel, midiController)
   temp = {}
   temp.name           = name
   temp.color          = color
   temp.channel        = channel
+  temp.textSize       = textSize
   temp.midiChannel    = midiChannel
   temp.midiController = midiController
   table.insert(channelData, temp)
 end
 
-AddChannel('Walt',   buttonColors.Red,   1,  1, 21)
-AddChannel('Jesse',  buttonColors.Blue,  2,  1, 41)
+AddChannel('Host',      buttonColors.Magenta,   1,   14, 1, 17)
+AddChannel('Judge 1',  buttonColors.Red,  2,   9, 1, 18)
+AddChannel('Judge 2',        buttonColors.Red,  3,   9, 1, 19)
 
-AddChannel('Skyler', buttonColors.Green, 3,  1, 22)
-AddChannel('Hank',   buttonColors.Green, 4,  1, 23)
-AddChannel('Gus',    buttonColors.Green, 5,  1, 24)
-AddChannel('Mike',   buttonColors.Green, 6,  1, 25)
+AddChannel('Homer',  buttonColors.Green,  4,  14, 1, 9)
+AddChannel('Marge',     buttonColors.Green,  5,  14, 1, 10)
+AddChannel('Bart',    buttonColors.Green,  6,   16, 1, 11)
+AddChannel('Lisa',       buttonColors.Green,  7,   16, 1, 12)
+AddChannel('Maggie',     buttonColors.Green,  8,  12, 1, 13)
+AddChannel('Abe',      buttonColors.Green,  9,  16, 1, 14)
+AddChannel('Patty',   buttonColors.Green,  10,   14, 1, 15)
+AddChannel('Selma',      buttonColors.Green,  11,   14, 1, 16)
 
-AddChannel('Saul',   buttonColors.Green, 7,  1, 26)
-AddChannel('Tuco',   buttonColors.Green, 8,  1, 27)
-AddChannel('Hector', buttonColors.Green, 9,  1, 28)
-AddChannel('Kim',    buttonColors.Green, 10, 1, 42)
+AddChannel('Boom',       buttonColors.Cyan,  22,  14, 1, 20)
 
-AddChannel('Howard', buttonColors.Green, 11, 1, 43)
-AddChannel('Cliff',  buttonColors.Green, 12, 1, 44)
-AddChannel('Lalo',   buttonColors.Green, 13, 1, 45)
-AddChannel('Nacho',  buttonColors.Green, 14, 1, 46)
-
-AddChannel('Marie',  buttonColors.Green, 15, 1, 47)
-AddChannel('Chuck',  buttonColors.Green, 16, 1, 48)
-AddChannel('Lydia',  buttonColors.Green, 17, 1, 62)
-AddChannel('Todd',   buttonColors.Green, 18, 1, 63)
-
-AddChannel('Boom',   buttonColors.Cyan,  19, 1, 64)
+AddChannel('Intv',     buttonColors.Blue, 16,  14, 1, 21)
 --Submodule.end()

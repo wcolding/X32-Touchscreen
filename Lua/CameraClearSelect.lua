@@ -2,9 +2,10 @@ local cameraObjs
 
 function init()
   cameraObjs = {}
-  for i = 1, #self.parent.parent.children do
-    if self.parent.parent.children[i].tag ~= 'ignore' then
-      table.insert(cameraObjs, self.parent.parent.children[i])
+  local cameras = self.parent.parent.children["Cameras"].children
+  for i = 1, #cameras do
+    if cameras[i].tag ~= 'ignore' then
+      table.insert(cameraObjs, cameras[i])
     end
   end
 end
