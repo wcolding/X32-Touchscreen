@@ -9,26 +9,35 @@ function init()
       table.insert(cameraObjs, cameras[i])
     end
   end
+
+  updateSolo(0)
 end
 
-function onValueChanged(key)
+function onValueChanged(key, value)
   if key == 'x' then
-    -- Float to Sends dB Mapping
+    updateSolo(value)
+  end
+end
+
+function updateSolo(value)
+  -- Float to Sends dB Mapping
     -- 0.75f = 0.0 dB
     -- 0.00f = -inf dB
     local db
-  
+    
+    self.values.x = value
+
     for i = 1, self.steps do
       db = 0.0
-      if i - 1 == self.values.x then
+      if i - 1 == value then
         db = 0.75
       end
     
       oscString = string.format("/bus/%02d/mix/01/level", cameraData[i].bus)
       sendOSC(oscString, db)
     end
+
     setSoloButtons()
-  end
 end
 
 function onReceiveNotify(sender, data)
@@ -37,16 +46,16 @@ function onReceiveNotify(sender, data)
     self.steps = #cameraData
   end
   
-  if sender == 'Solo' then
-    self.values.x = data - 1
-    setSoloButtons()
+  if sender == 'SoloButton' then
+    print(string.format("Msg received from Solo button: %s", data))
+    updateSolo(data - 1)
   end
 end
 
 function setSoloButtons()
   local cameraSolo
   for i = 1, #cameraObjs do
-    cameraSolo = cameraObjs[i].children['Solo'].children['Button']
+    cameraSolo = cameraObjs[i].children['Solo'].children['SoloButton']
     if cameraObjs[i].mixIndex == self.values.x + 1 then
       cameraSolo.values.x = 1
       cameraSolo.interactive = false

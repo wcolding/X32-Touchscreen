@@ -247,7 +247,7 @@
               </property>
               <property type="b">
                 <key>visible</key>
-                <value>1</value>
+                <value>0</value>
               </property>
             </properties>
             <values>
@@ -13763,10 +13763,6 @@
                         <key>pointerPriority</key>
                         <value>0</value>
                       </property>
-                      <property type="s">
-                        <key>script</key>
-                        <value>${Solo.lua}</value>
-                      </property>
                       <property type="i">
                         <key>shape</key>
                         <value>1</value>
@@ -13832,7 +13828,7 @@
                           </property>
                           <property type="s">
                             <key>name</key>
-                            <value>Button</value>
+                            <value>SoloButton</value>
                           </property>
                           <property type="i">
                             <key>orientation</key>
@@ -13857,6 +13853,10 @@
                           <property type="b">
                             <key>release</key>
                             <value>0</value>
+                          </property>
+                          <property type="s">
+                            <key>script</key>
+                            <value>${SoloButton.lua}</value>
                           </property>
                           <property type="i">
                             <key>shape</key>
