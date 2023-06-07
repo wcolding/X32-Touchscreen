@@ -3066,9 +3066,9 @@
                         <key>color</key>
                         <value>
                           <r>0.878431</r>
-                          <g>0.4</g>
-                          <b>0.4</b>
-                          <a>1</a>
+                          <g>0.400000</g>
+                          <b>0.400000</b>
+                          <a>1.000000</a>
                         </value>
                       </property>
                       <property type="f">
@@ -3144,10 +3144,10 @@
                       <property type="c">
                         <key>color</key>
                         <value>
-                          <r>0.8</r>
-                          <g>0</g>
-                          <b>0</b>
-                          <a>1</a>
+                          <r>0.800000</r>
+                          <g>0.000000</g>
+                          <b>0.000000</b>
+                          <a>1.000000</a>
                         </value>
                       </property>
                       <property type="f">
@@ -3223,10 +3223,10 @@
                       <property type="c">
                         <key>color</key>
                         <value>
-                          <r>0.8</r>
-                          <g>0</g>
-                          <b>0</b>
-                          <a>1</a>
+                          <r>0.800000</r>
+                          <g>0.000000</g>
+                          <b>0.000000</b>
+                          <a>1.000000</a>
                         </value>
                       </property>
                       <property type="f">
@@ -3434,8 +3434,8 @@
                           <property type="r">
                             <key>frame</key>
                             <value>
-                              <x>25</x>
-                              <y>25</y>
+                              <x>224</x>
+                              <y>66</y>
                               <w>48</w>
                               <h>72</h>
                             </value>
@@ -3454,15 +3454,15 @@
                           </property>
                           <property type="i">
                             <key>midiChannel</key>
-                            <value>1</value>
+                            <value>14</value>
                           </property>
                           <property type="i">
                             <key>midiController</key>
-                            <value>17</value>
+                            <value>21</value>
                           </property>
                           <property type="s">
                             <key>name</key>
-                            <value>Channel</value>
+                            <value>Ch01</value>
                           </property>
                           <property type="i">
                             <key>iterableButton</key>
@@ -3545,9 +3545,9 @@
                               <property type="r">
                                 <key>frame</key>
                                 <value>
-                                  <x>38</x>
+                                  <x>0</x>
                                   <y>0</y>
-                                  <w>10</w>
+                                  <w>48</w>
                                   <h>72</h>
                                 </value>
                               </property>
@@ -3652,20 +3652,20 @@
                                 </triggers>
                                 <message>
                                   <type>CONTROLCHANGE</type>
-                                  <channel>0</channel>
-                                  <data1>0</data1>
+                                  <channel>13</channel>
+                                  <data1>21</data1>
                                   <data2>0</data2>
                                 </message>
                                 <values>
                                   <value>
                                     <type>CONSTANT</type>
-                                    <key></key>
+                                    <key />
                                     <scaleMin>0</scaleMin>
                                     <scaleMax>0</scaleMax>
                                   </value>
                                   <value>
                                     <type>CONSTANT</type>
-                                    <key></key>
+                                    <key />
                                     <scaleMin>0</scaleMin>
                                     <scaleMax>1</scaleMax>
                                   </value>
@@ -3694,8 +3694,8 @@
                                 <value>
                                   <r>0.929412</r>
                                   <g>0.152941</g>
-                                  <b>0.67451</b>
-                                  <a>1</a>
+                                  <b>0.674510</b>
+                                  <a>1.000000</a>
                                 </value>
                               </property>
                               <property type="f">
@@ -3953,7 +3953,7 @@
                                 <key>text</key>
                                 <locked>0</locked>
                                 <lockedDefaultCurrent>1</lockedDefaultCurrent>
-                                <default>Host</default>
+                                <default>Troy</default>
                                 <defaultPull>0</defaultPull>
                               </value>
                               <value>
