@@ -23,6 +23,8 @@ function reset()
   mixGroupData[3] = {}
   mixGroupData[4] = {}
 
+  populateCameraData()
+
   self.notify(self.children['MonitorSelect'], self.name, cameraData)
 
   local cameras = self.children['Cameras'].children
