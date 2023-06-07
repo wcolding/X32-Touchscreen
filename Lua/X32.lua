@@ -23,12 +23,12 @@ function reset()
   mixGroupData[3] = {}
   mixGroupData[4] = {}
 
+  populateChannelData()
   populateCameraData()
 
   self.notify(self.children['MonitorSelect'], self.name, cameraData)
-
   local cameras = self.children['Cameras'].children
-  
+
   for i = 1, #cameras do
     child = cameras[i]
     
@@ -39,12 +39,6 @@ function reset()
       cameraChannels = child.children['Channels']
       for ch = 1, #cameraChannels.children do
         channel = cameraChannels.children[ch]
-        channel.children['ChannelButton'].color = channelData[ch].color
-        channel.children['Text'].values.text = channelData[ch].name
-        channel.children['Text'].textSize = channelData[ch].textSize
-        channel.tag = string.format('%.2d', channelData[ch].channel)
-        channel.midiChannel = channelData[ch].midiChannel
-        channel.midiController = channelData[ch].midiController
       
         if i == 1 then 
           -- Cache this channel's display data
@@ -73,10 +67,10 @@ function writeChannelDataToX32()
   local oscString
 
   for i = 1, #channelData do
-    oscString = string.format('/ch/%.2d/config/name', channelData[i].channel)
+    oscString = string.format('/ch/%s/config/name', channelData[i].channel)
     sendOSC({oscString, {{ tag = 's', value = channelData[i].name }}})
 
-    oscString = string.format('/ch/%.2d/config/color', channelData[i].channel)
+    oscString = string.format('/ch/%s/config/color', channelData[i].channel)
     for col = 0, 7 do
       if channelData[i].color == buttonColors[col] then
         sendOSC({oscString, {{ tag = 'i', value = col }}})

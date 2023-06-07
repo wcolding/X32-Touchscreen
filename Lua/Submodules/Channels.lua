@@ -1,6 +1,7 @@
 --Submodule.start('Channels.lua')
 
 -- This remaps colors to better match the X32 scheme
+-- todo: rework this to be entirely from config
 local buttonColors = {}
 buttonColors[0] = Colors.black                    -- black (placeholder; we will hide the button if it is set to this)
 buttonColors[1] = Color.fromHexString('e72d2eff') -- red
@@ -22,31 +23,28 @@ buttonColors.White   = buttonColors[7]
 
 local channelData = {}
 
-function AddChannel(name, color, channel, textSize, midiChannel, midiController)
+function clearChannelData()
+  channelData = {}
+end
+
+function addChannelData(channel)
   temp = {}
-  temp.name           = name
-  temp.color          = color
-  temp.channel        = channel
-  temp.textSize       = textSize
-  temp.midiChannel    = midiChannel
-  temp.midiController = midiController
+  temp.name           = channel.children['Text'].values.text
+  temp.color          = channel.children['ChannelButton'].color
+  temp.channel        = channel.tag
+  temp.textSize       = channel.children['Text'].textSize
+  temp.midiChannel    = channel.midiChannel
+  temp.midiController = channel.midiController
   table.insert(channelData, temp)
 end
 
-AddChannel('Host',      buttonColors.Magenta,   1,   14, 1, 17)
-AddChannel('Judge 1',  buttonColors.Red,  2,   9, 1, 18)
-AddChannel('Judge 2',        buttonColors.Red,  3,   9, 1, 19)
+function populateChannelData()
+  clearChannelData()
+  local channels = self.children['Cameras'].children[1].children['Channels'].children
 
-AddChannel('Homer',  buttonColors.Green,  4,  14, 1, 9)
-AddChannel('Marge',     buttonColors.Green,  5,  14, 1, 10)
-AddChannel('Bart',    buttonColors.Green,  6,   16, 1, 11)
-AddChannel('Lisa',       buttonColors.Green,  7,   16, 1, 12)
-AddChannel('Maggie',     buttonColors.Green,  8,  12, 1, 13)
-AddChannel('Abe',      buttonColors.Green,  9,  16, 1, 14)
-AddChannel('Patty',   buttonColors.Green,  10,   14, 1, 15)
-AddChannel('Selma',      buttonColors.Green,  11,   14, 1, 16)
+  for i = 1, #channels do
+    addChannelData(channels[i])
+  end
+end
 
-AddChannel('Boom',       buttonColors.Cyan,  22,  14, 1, 20)
-
-AddChannel('Intv',     buttonColors.Blue, 16,  14, 1, 21)
 --Submodule.end()
