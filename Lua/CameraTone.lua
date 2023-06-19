@@ -5,7 +5,7 @@
 -- 3 = MC
 -- 4 = MixBus 01...
 local chOffset = 3 
-local toneBus = 10
+local toneBus = 13
 local oscTemplate = '/outputs/main/%s/src'
 local oscString
 
