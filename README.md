@@ -6,12 +6,10 @@ It is intended for use in unscripted production audio environments in which it i
 
 The scripts generate files that run in [TouchOSC](https://hexler.net/touchosc), control interface software that supports Windows, macOS, Linux, iOS and Android platforms. For the best experience a desktop environment with a large touchscreen is recommended.
 
----
 ## Requirements
 
 Python 3.10+
 
----
 ## Quick Start
 
 [pyTOSC](https://github.com/wcolding/pyTOSC) is included as a submodule to this project, and it contains the Python scripts to build files. To properly install pyTOSC, simply clone this repository with the `--recurse-submodules` flag, i.e.:
